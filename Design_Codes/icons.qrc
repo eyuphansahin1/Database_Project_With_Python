@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="login">
+    <file>login.ico</file>
+  </qresource>
+  <qresource prefix="back">
+    <file>back.ico</file>
+  </qresource>
+</RCC>

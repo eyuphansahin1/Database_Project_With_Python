@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1217</width>
+    <height>644</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>101</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Oyuncu Adı</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Forma no</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Oyuncu Mevki</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>gol sayısı</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>asist sayısı</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Takım id</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>70</y>
+     <width>132</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLineEdit" name="lineEdit_oyuncuadi"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_formano"/>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBox_mevki">
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>kaleci</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>stoper</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>sol bek</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>sağ bek</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>önlibero</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>merkez orta saha</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>on numara</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>sol kanat</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>sağ kanat</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>forvet</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>santrafor</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_golsayisi"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_asistsayisi"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_takimid"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>60</y>
+     <width>881</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="columnCount">
+    <number>7</number>
+   </property>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+  </widget>
+  <widget class="QPushButton" name="pushButton_mevkiyegoresirala">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>20</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>mevkiye göre sırala</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_mevkiyesirala">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>20</y>
+     <width>130</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>-1</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>kaleci</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>stoper</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>sol bek</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>sağ bek</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>önlibero</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>merkez orta saha</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>on numara</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>sol kanat</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>sağ kanat</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>forvet</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>santrafor</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_oyuncuekle">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>450</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Oyuncu Ekle</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_oyuncusil">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>450</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Oyuncu Sil</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_oyunculistele">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>450</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Oyuncu Listele</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_oyuncuduzenle">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>450</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Oyuncu Düzenle</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>520</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Düzenleme</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>520</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Düzenlenecek ID değeri</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_duzenelencekid">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>550</y>
+     <width>141</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>520</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>oyuncu mevki düzenle</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_mevki_duzenle">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>550</y>
+     <width>130</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>-1</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>kaleci</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>stoper</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>sol bek</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>sağ bek</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>önlibero</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>merkez orta saha</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>on numara</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>sol kanat</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>sağ kanat</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>forvet</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>santrafor</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>520</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>düzenlenecek oyuncu bilgisi</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_yenideger">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>550</y>
+     <width>151</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>520</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>yeni değeri</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>550</y>
+     <width>141</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>-1</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>Oyuncu Adı</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Forma no</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>gol sayısı</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>asist sayısı</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Takım id</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
